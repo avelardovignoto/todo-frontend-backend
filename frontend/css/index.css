@@ -1,0 +1,144 @@
+:root {
+  --color-one: #4b0082;
+  --color-two: #f6f2f8;
+  --color-three: #008000;
+  --color-for: #dd1e1e;
+  --color-five: #d3d3d3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--color-two);
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+  color: #ffffff;
+  background-color: var(--color-one);
+}
+
+.sub-title {
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+input {
+  width: 300px;
+  font-size: 15px;
+  padding: 15px;
+  outline: none;
+  border: 2px solid var(--color-five);
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+input:focus {
+  border: 2px solid var(--color-one);
+}
+
+.btn {
+  width: 100px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: var(--color-one);
+}
+
+.btn:focus {
+  border: none;
+}
+
+.task-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+  margin-top: 25px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+}
+
+p {
+  flex: 2;
+}
+
+.description {
+  font-weight: bold;
+}
+
+span {
+  display: flex;
+  margin: 5px;
+}
+
+.green-check {
+  cursor: pointer;
+  color: var(--color-three);
+}
+
+.red-remove {
+  cursor: pointer;
+  color: var(--color-for);
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 18px;
+  }
+  
+  input {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .task-list {
+    width: 100%;
+  }
+  
+  .task-item {
+    width: 80%;
+  }
+  
+  .description {
+    font-size: 15px;
+  }
+  
+  span {
+    margin: 2px;
+  }
+
+}
+
